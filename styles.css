@@ -5,6 +5,12 @@ body {
     flex-direction: column;
     font-family: Roboto, sans-serif;
     justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+}
+
+.big-container {
+    max-width: 1200px;
 }
 
 .container-h {
@@ -22,9 +28,19 @@ body {
     gap: 16px;
 }
 
-.header {
+.header, .footer {
     background-color: #1F2937;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
     padding: 8px 160px;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
 }
 
 .random {
@@ -32,12 +48,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 48px 160px; 
+    padding: 48px; 
 }
 
 .card-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 48px;
     gap: 32px;
 }
@@ -61,6 +78,66 @@ body {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 160px;
+    background-color: #E5E7EB;
+}
+
+.italic-quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.source {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+.call {
+    display: flex;
+    padding: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.call .big-container {
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-between;
+    width: 1200px;
+    border-radius: 8px;
+    padding: 48px 96px;
+}
+
+.call .container-v {
+    gap: 4px;
+}
+
+.action-text {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.call .hero-button {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    border: 2px solid #F9FAF8;
 }
 
 .logo, .main {
